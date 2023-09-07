@@ -1,4 +1,8 @@
 package com.vehiculerental.locationsDeVehicules.repository;
 
-public interface CustomerRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.vehiculerental.locationsDeVehicules.model.Customer;
+
+public interface CustomerRepository extends CrudRepository<Customer, Integer>{
 }

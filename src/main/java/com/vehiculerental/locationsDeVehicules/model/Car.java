@@ -29,4 +29,7 @@ public class Car {
     @Column(name="disponibility")
     private String  disponibility;
 
+    public void setIdCar(int idCar) {
+        this.idCar = idCar;
+    }
 }

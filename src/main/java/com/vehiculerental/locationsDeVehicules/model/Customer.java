@@ -20,4 +20,7 @@ public class Customer {
     @Column(name="permit")
     private int permit;
 
+    public void setIdCustomer(int idCustomer) {
+        this.idCustomer = idCustomer;
+    }
 }

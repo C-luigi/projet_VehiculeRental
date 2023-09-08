@@ -7,11 +7,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
 @Entity
-@Table(name="Car")
+@Table(name="car")
 public class Car {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private int idCar;
+    private int id;
     @Column(name="registration")
     private String registration;
     @Column(name="brand")
@@ -29,7 +29,10 @@ public class Car {
     @Column(name="disponibility")
     private String  disponibility;
 
-    public void setIdCar(int idCar) {
-        this.idCar = idCar;
+    public Car() {
+    }
+
+    public void setIdCar(int id) {
+        this.id = id;
     }
 }

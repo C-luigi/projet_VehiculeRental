@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CarService {
-
+    @Autowired
     private final CarRepository carRepository;
 
     public CarService(CarRepository carRepository) {
